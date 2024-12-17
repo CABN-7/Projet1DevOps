@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String rep;
         do {
+
             Scanner sc = new Scanner(System.in);
             System.out.println("Veuillez saisir un nombre : ");
             int n = sc.nextInt();
