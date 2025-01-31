@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f580eeb-8a2c-4f06-b99c-ce51cc7fe1f2" name="Changes" comment="Ajout de la méthode factoriel et des tests unitaires">
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+    <list default="true" id="3f580eeb-8a2c-4f06-b99c-ce51cc7fe1f2" name="Changes" comment="Ajout JenkinsFile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734465681031</updated>
       <workItem from="1734465681785" duration="4648000" />
-      <workItem from="1738357826703" duration="253000" />
+      <workItem from="1738357826703" duration="1087000" />
     </task>
     <task id="LOCAL-00001" summary="Version2">
       <option name="closed" value="true" />
@@ -119,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734470183350</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout JenkinsFile">
+      <option name="closed" value="true" />
+      <created>1738358535162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738358535164</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version2" />
     <MESSAGE value="Ajout de la méthode factoriel et des tests unitaires" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la méthode factoriel et des tests unitaires" />
+    <MESSAGE value="Ajout JenkinsFile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout JenkinsFile" />
   </component>
 </project>

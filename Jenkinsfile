@@ -18,3 +18,6 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+    } // Fermeture du bloc 'stages'
+
+} // Fermeture du bloc 'pipeline'
