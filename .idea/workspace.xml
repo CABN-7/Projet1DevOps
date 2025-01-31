@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f580eeb-8a2c-4f06-b99c-ce51cc7fe1f2" name="Changes" comment="Ajout JenkinsFile">
+    <list default="true" id="3f580eeb-8a2c-4f06-b99c-ce51cc7fe1f2" name="Changes" comment="Ajout JenkinsFile2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
@@ -101,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734465681031</updated>
       <workItem from="1734465681785" duration="4648000" />
-      <workItem from="1738357826703" duration="1087000" />
+      <workItem from="1738357826703" duration="1969000" />
     </task>
     <task id="LOCAL-00001" summary="Version2">
       <option name="closed" value="true" />
@@ -127,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738358535164</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ajout JenkinsFile2">
+      <option name="closed" value="true" />
+      <created>1738358991977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738358991977</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,7 @@
     <MESSAGE value="Version2" />
     <MESSAGE value="Ajout de la méthode factoriel et des tests unitaires" />
     <MESSAGE value="Ajout JenkinsFile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout JenkinsFile" />
+    <MESSAGE value="Ajout JenkinsFile2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout JenkinsFile2" />
   </component>
 </project>
