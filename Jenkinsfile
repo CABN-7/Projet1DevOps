@@ -7,7 +7,8 @@ pipeline {
     }
 
     environment {
-        SONARQUBE_URL = 'Sonar' // Nom configuré dans Jenkins
+        SONARQUBE_URL = 'http://localhost:9000'
+        SONAR_TOKEN = 'TON_TOKEN_ICI' // Remplace par ton token réel
         ARTIFACTORY_ID = 'artifactory-instance'
     }
 
@@ -26,8 +27,8 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('Sonar') { // Doit correspondre au nom défini dans la config de Jenkins
-                    sh 'mvn sonar:sonar'
+                withSonarQubeEnv('Sonar') {
+                    sh 'mvn sonar:sonar -Dsonar.projectKey=Projet1DevOps -Dsonar.host.url=$SONARQUBE_URL -Dsonar.login=$SONAR_TOKEN'
                 }
             }
         }
