@@ -2,25 +2,33 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.8.1' // Correspond au nom que tu as donné à l'installation Maven dans Jenkins
+        maven 'Maven 3.8.1'
         jdk 'jdk-17'
     }
 
     environment {
-        SONARQUBE_URL = 'http://localhost:9000'  // Adresse de SonarQube
-        ARTIFACTORY_ID = 'artifactory-instance' // Nom configuré dans Jenkins
+        SONARQUBE_URL = 'Sonar' // Nom configuré dans Jenkins
+        ARTIFACTORY_ID = 'artifactory-instance'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/CABN-7/Projet1DevOps.git' // Remplace par ton repo Git
+                git 'https://github.com/CABN-7/Projet1DevOps.git'
             }
         }
 
         stage('Build') {
             steps {
                 sh 'mvn clean package'
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('Sonar') { // Doit correspondre au nom défini dans la config de Jenkins
+                    sh 'mvn sonar:sonar'
+                }
             }
         }
     }
