@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         SONARQUBE_URL = 'http://localhost:9000'
-        SONAR_TOKEN = 'TON_TOKEN_ICI' // Remplace par ton token réel
+        SONAR_TOKEN = 'squ_739b34d27efe77880ac79f4a4661e4a9725cd5bb' // Remplace par ton token réel
         ARTIFACTORY_ID = 'artifactory-instance'
     }
 
