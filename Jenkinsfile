@@ -8,6 +8,7 @@ pipeline {
 
     environment {
         ARTIFACTORY_ID = 'artifactory-instance'
+        SONAR_HOST_URL = 'http://localhost:9000'  // À modifier selon ton instance
     }
 
     stages {
@@ -27,12 +28,12 @@ pipeline {
             steps {
                 withSonarQubeEnv('Sonar') {
                     withCredentials([string(credentialsId: 'sonar-token', variable: 'SONAR_TOKEN')]) {
-                        sh '''
+                        sh """
                             mvn sonar:sonar \
                             -Dsonar.projectKey=Projet1DevOps \
                             -Dsonar.host.url=$SONAR_HOST_URL \
                             -Dsonar.login=$SONAR_TOKEN
-                        '''
+                        """
                     }
                 }
             }
