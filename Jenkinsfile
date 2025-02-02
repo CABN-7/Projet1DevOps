@@ -8,7 +8,11 @@ pipeline {
 
     environment {
         ARTIFACTORY_ID = 'artifactory-instance'
-        SONAR_HOST_URL = 'http://localhost:9000'  // À modifier selon ton instance
+        SONAR_HOST_URL = '172.20.196.35:9000'
+        /* 172.20.196.35 est l'aadresse Ip de ma machine (sur WSL2)
+        Taper la commande suivante pour la trouver :
+        ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
+        */
     }
 
     stages {
