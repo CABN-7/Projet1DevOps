@@ -9,10 +9,11 @@ pipeline {
     environment {
         ARTIFACTORY_ID = 'artifactory-instance'
         SONAR_HOST_URL = 'http://172.17.0.3:9000'
-        /* 172.20.196.35 est l'aadresse Ip de ma machine (sur WSL2)
+        /* 172.17.0.3
         Taper la commande suivante pour la trouver :
-        ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
+        docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' sonarqube-custom
         */
+        ARTIFACTORY_REPO = 'libs-release-local'
     }
 
     stages {
@@ -41,6 +42,25 @@ pipeline {
                     }
                 }
             }
+        }
+
+        stage('Upload to Artifactory') {
+                    steps {
+                        script {
+                            def server = Artifactory.server 'artifactory-instance'
+                            def buildInfo = Artifactory.newBuildInfo()
+
+                            def uploadSpec = """{
+                                "files": [{
+                                    "pattern": "target/*.jar",
+                                    "target": "$ARTIFACTORY_REPO/"
+                                }]
+                            }"""
+
+                            server.upload spec: uploadSpec, buildInfo: buildInfo
+                            server.publishBuildInfo buildInfo
+                        }
+                    }
         }
     }
 }
