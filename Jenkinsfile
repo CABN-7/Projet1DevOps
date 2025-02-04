@@ -14,6 +14,7 @@ pipeline {
         docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' sonarqube-custom
         */
         ARTIFACTORY_REPO = 'libs-release-local'  // Nom du dépôt cible sur Artifactory
+        ARTIFACTORY_URL = 'http://172.20.0.3:8081/artifactory'  // URL d'Artifactory
     }
 
     stages {

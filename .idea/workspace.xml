@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f580eeb-8a2c-4f06-b99c-ce51cc7fe1f2" name="Changes" comment="Mise à jour et correction Jenkinsfile et intégration d'Artifactory">
+    <list default="true" id="3f580eeb-8a2c-4f06-b99c-ce51cc7fe1f2" name="Changes" comment="Mise à jour Jenkinsfile et intégration d'Artifactory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
@@ -106,7 +106,7 @@
       <workItem from="1738362454453" duration="394000" />
       <workItem from="1738410203749" duration="16401000" />
       <workItem from="1738672780003" duration="1204000" />
-      <workItem from="1738675924660" duration="4057000" />
+      <workItem from="1738675924660" duration="8258000" />
     </task>
     <task id="LOCAL-00001" summary="Version2">
       <option name="closed" value="true" />
@@ -268,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738676944575</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Mise à jour Jenkinsfile et intégration d'Artifactory">
+      <option name="closed" value="true" />
+      <created>1738684525295</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1738684525295</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +317,7 @@
     <MESSAGE value="Mise à jour et correction Jenkinsfile" />
     <MESSAGE value="Mise à jour et correction Jenkinsfile2" />
     <MESSAGE value="Mise à jour et correction Jenkinsfile et intégration d'Artifactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour et correction Jenkinsfile et intégration d'Artifactory" />
+    <MESSAGE value="Mise à jour Jenkinsfile et intégration d'Artifactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour Jenkinsfile et intégration d'Artifactory" />
   </component>
 </project>
